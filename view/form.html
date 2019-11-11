@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Форма отправки</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://bootstraptema.ru/snippets/form/2017/recaptcha/custom.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/form.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-8 col-lg-offset-2">
+
+            <h1 class="text-center">Форма отправки</h1>
+
+            <form id="contact-form" method="post" action="" role="form">
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Firstname *</label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Пожалуйста, введите ваше имя *">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastname">Lastname *</label>
+                                <input id="lastname" type="text" name="lastname" class="form-control" placeholder="Пожалуйста, введите свою фамилию *">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input id="email" type="email" name="email" class="form-control" placeholder="Пожалуйста, введите свой email *">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Пожалуйста, введите ваш телефон*">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            <div id="messageShow" style="color:red"></div>
+                            <p>Результат запроса:</p>
+                            <p class="regOk"></p>
+                            <hr/>
+
+                        </div>
+                </div>
+
+            </form>
+        </div><!-- /.col-lg-8 col-lg-offset-2 -->
+
+    </div> <!-- /.row-->
+</div> <!-- /.container-->
+</body>
+</html>
